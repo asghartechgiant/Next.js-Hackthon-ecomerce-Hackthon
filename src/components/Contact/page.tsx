@@ -130,7 +130,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   placeholder="Let us know what you think"
-                  rows="4"
+                  rows={4}
                   className="mt-1 block w-full p-3 border rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
                 ></textarea>
               </div>

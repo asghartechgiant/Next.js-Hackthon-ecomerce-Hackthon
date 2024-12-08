@@ -88,7 +88,7 @@ export default function CheckOut() {
             <textarea
               placeholder="Additional information"
               className="border border-gray-300 rounded-lg p-2 w-full"
-              rows="3"
+              rows={3}
             ></textarea>
           </form>
         </div>

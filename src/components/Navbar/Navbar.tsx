@@ -2,17 +2,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
-// import { useRouter } from "next/navigation";
 import { MdPersonOutline } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { GoHeart } from "react-icons/go";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation"; // Import the usePathname hook
 
 const Navbar: React.FC = () => {
-  const router = useRouter();
+  const pathname = usePathname(); // Get the current pathname
 
-  const isActive = (pathname: string) => router.pathname === pathname;
+  // Function to check if the current path is active
+  const isActive = (link: string) => pathname === link;
 
   return (
     <div className="navbar flex justify-between items-center px-10 py-6 mx-5">
@@ -83,8 +83,7 @@ const Navbar: React.FC = () => {
           <GoHeart className="hover:text-yellow-500 cursor-pointer" />
         </button>
         <button aria-label="Cart">
-          {/* <AiOutlineShoppingCart className="hover:text-yellow-500 cursor-pointer" /> */}
-          <AiOutlineShoppingCart />
+          <AiOutlineShoppingCart className="hover:text-yellow-500 cursor-pointer" />
         </button>
       </div>
     </div>
