@@ -5,7 +5,7 @@ import Card2 from "./Card2";
 
 export default function Card3() {
   return (
-    <div className="relative my-20">
+    <div className="relative my-8 md:my-20">
       {/* Background Image Section */}
       <Image
         src="/Rectangle2.png"
@@ -17,9 +17,9 @@ export default function Card3() {
       />
 
       {/* Overlay Content */}
-      <div className="absolute top-10 left bg-white bg-opacity-80 p-4 rounded-md shadow-md">
+      <div className="absolute top-10 left-4 md:left-10 bg-white bg-opacity-80 p-4 rounded-md shadow-md w-full md:w-auto">
         {/* Logo Section */}
-        <div className="flex  items-center space-x-2">
+        <div className="flex items-center space-x-2">
           <Image
             src="/logo.png"
             width={40}
@@ -46,9 +46,8 @@ export default function Card3() {
         </div>
       </div>
 
-      {/* 1234455566 */}
       {/* Filter Section */}
-      <div className="bg-[#F9F1E7] p-10 flex justify-between items-center">
+      <div className="bg-[#F9F1E7] p-6 md:p-10 flex flex-wrap justify-between items-center">
         {/* Left Section: Filters */}
         <ul className="flex items-center gap-5">
           {/* Filter Icon */}
@@ -71,7 +70,7 @@ export default function Card3() {
         </ul>
 
         {/* Right Section: Sorting */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mt-4 md:mt-0">
           <span>Show</span>
           <button className="px-3 py-1 bg-white rounded hover:bg-gray-300">
             16
@@ -82,127 +81,41 @@ export default function Card3() {
           </button>
         </div>
       </div>
-      <div className="flex mx-6">
+
+      {/* Product Cards Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-4 md:mx-6">
         <Card2
           title="Syltherine"
           imageSrc="/img.png"
           altText="work"
           paragraph="Stylish cafe chair"
           price={"Rp 25.00.000"}
-        ></Card2>
+        />
         <Card2
           title="Respira"
           imageSrc="/img2.png"
           altText="work"
           paragraph="Outdoor bar table and stool"
           price={"Rp 500.000"}
-        ></Card2>
+        />
         <Card2
           title="Lolito"
           imageSrc="/image 3.png"
           altText="work"
           paragraph="Luxury big sofa"
           price={"Rp 7.000.000"}
-        ></Card2>
+        />
         <Card2
           title="Respira"
           imageSrc="/img2.png"
           altText="work"
           paragraph="Outdoor bar table and stool"
           price={"Rp 500.000"}
-        ></Card2>
+        />
       </div>
-      <div className="flex mx-6">
-        <Card2
-          title="Syltherine"
-          imageSrc="/img.png"
-          altText="work"
-          paragraph="Stylish cafe chair"
-          price={"Rp 25.00.000"}
-        ></Card2>
-        <Card2
-          title="Respira"
-          imageSrc="/img2.png"
-          altText="work"
-          paragraph="Outdoor bar table and stool"
-          price={"Rp 500.000"}
-        ></Card2>
-        <Card2
-          title="Lolito"
-          imageSrc="/image 3.png"
-          altText="work"
-          paragraph="Luxury big sofa"
-          price={"Rp 7.000.000"}
-        ></Card2>
-        <Card2
-          title="Respira"
-          imageSrc="/img2.png"
-          altText="work"
-          paragraph="Outdoor bar table and stool"
-          price={"Rp 500.000"}
-        ></Card2>
-      </div>
-      <div className="flex mx-6">
-        <Card2
-          title="Syltherine"
-          imageSrc="/img.png"
-          altText="work"
-          paragraph="Stylish cafe chair"
-          price={"Rp 25.00.000"}
-        ></Card2>
-        <Card2
-          title="Respira"
-          imageSrc="/img2.png"
-          altText="work"
-          paragraph="Outdoor bar table and stool"
-          price={"Rp 500.000"}
-        ></Card2>
-        <Card2
-          title="Lolito"
-          imageSrc="/image 3.png"
-          altText="work"
-          paragraph="Luxury big sofa"
-          price={"Rp 7.000.000"}
-        ></Card2>
-        <Card2
-          title="Respira"
-          imageSrc="/img2.png"
-          altText="work"
-          paragraph="Outdoor bar table and stool"
-          price={"Rp 500.000"}
-        ></Card2>
-      </div>
-      <div className="flex mx-6">
-        <Card2
-          title="Syltherine"
-          imageSrc="/img.png"
-          altText="work"
-          paragraph="Stylish cafe chair"
-          price={"Rp 25.00.000"}
-        ></Card2>
-        <Card2
-          title="Respira"
-          imageSrc="/img2.png"
-          altText="work"
-          paragraph="Outdoor bar table and stool"
-          price={"Rp 500.000"}
-        ></Card2>
-        <Card2
-          title="Lolito"
-          imageSrc="/image 3.png"
-          altText="work"
-          paragraph="Luxury big sofa"
-          price={"Rp 7.000.000"}
-        ></Card2>
-        <Card2
-          title="Respira"
-          imageSrc="/img2.png"
-          altText="work"
-          paragraph="Outdoor bar table and stool"
-          price={"Rp 500.000"}
-        ></Card2>
-      </div>
-      <div className="flex items-center justify-center space-x-4 my-16 ">
+
+      {/* Pagination Section */}
+      <div className="flex items-center justify-center space-x-4 my-16">
         {/* Page 1 */}
         <button className="w-10 h-10 bg-[#B08540] text-white font-medium rounded-lg flex items-center justify-center hover:bg-[#B08540]">
           1
