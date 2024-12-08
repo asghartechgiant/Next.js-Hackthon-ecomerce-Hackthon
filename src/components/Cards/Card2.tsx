@@ -19,7 +19,6 @@ const Card2: React.FC<CardProps> = ({
     <div className="flex flex-col items-start p-4 shadow-md rounded-lg ">
       {/* 1Card Image */}
       <Image src={imageSrc} width={300} height={400} alt={altText} />
-
       {/* Card Title */}
       <h1 className="mt-4 text-lg font-bold text-gray-800">{title}</h1>
       <p className="py-1">{paragraph}</p>
