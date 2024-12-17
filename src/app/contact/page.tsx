@@ -1,11 +1,24 @@
-import Menu from "@/components/Contact/Menu";
-import Contact from "@/components/Contact/page";
+import BreadCrumb from "@/components/BreadCrumb";
+import ContactSection from "@/components/ContactSection";
+import SupportSection from "@/components/SupportSection";
+import React from "react";
 
-export default function contact() {
+const ContactPage = () => {
   return (
-    <div>
-      <Contact></Contact>
-      <Menu></Menu>
-    </div>
+    <>
+      <BreadCrumb
+        backgroundImage="/banner.png"
+        icon="/house.png"
+        title="Contact"
+        links={[
+          { name: "Home", href: "/" },
+          { name: "Contact", isActive: true },
+        ]}
+      />
+      <ContactSection />
+      <SupportSection />
+    </>
   );
-}
+};
+
+export default ContactPage;

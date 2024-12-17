@@ -1,26 +1,24 @@
 import BreadCrumb from "@/components/BreadCrumb";
-import FilterSection from "@/components/FilterSection";
-import ShopProductSection from "@/components/ShopProductSection";
+import Cart from "@/components/CartSection";
 import SupportSection from "@/components/SupportSection";
 import React from "react";
 
-const ShopPage = () => {
+const CartPage = () => {
   return (
     <>
       <BreadCrumb
         backgroundImage="/banner.png"
         icon="/house.png"
-        title="Shop"
+        title="Cart"
         links={[
           { name: "Home", href: "/" },
-          { name: "Shop", isActive: true },
+          { name: "Cart", isActive: true },
         ]}
       />
-      <FilterSection />
-      <ShopProductSection />
+      <Cart />
       <SupportSection />
     </>
   );
 };
 
-export default ShopPage;
+export default CartPage;

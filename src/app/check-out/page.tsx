@@ -1,26 +1,24 @@
+import BillingForm from "@/components/BillingForm";
 import BreadCrumb from "@/components/BreadCrumb";
-import FilterSection from "@/components/FilterSection";
-import ShopProductSection from "@/components/ShopProductSection";
 import SupportSection from "@/components/SupportSection";
 import React from "react";
 
-const ShopPage = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
         backgroundImage="/banner.png"
         icon="/house.png"
-        title="Shop"
+        title="Checkout"
         links={[
           { name: "Home", href: "/" },
-          { name: "Shop", isActive: true },
+          { name: "Checkout", isActive: true },
         ]}
       />
-      <FilterSection />
-      <ShopProductSection />
+      <BillingForm />
       <SupportSection />
     </>
   );
 };
 
-export default ShopPage;
+export default page;

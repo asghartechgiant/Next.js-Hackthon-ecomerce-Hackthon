@@ -1,11 +1,17 @@
-import HeroSection from "@/components/Navbar/HeroSection/HeroSection";
-import ShopPage from "./shop/page";
+import CategorySection from "@/components/CategorySection";
+import HomeMainSection from "@/components/HomeMainSection";
+import HomeProductSection from "@/components/HomeProductSection";
+import InspirationSection from "@/components/InspirationSection";
+import ShareSection from "@/components/ShareSection";
 
 export default function Home() {
   return (
-    <div>
-      <HeroSection />
-      <ShopPage />
-    </div>
+    <>
+      <HomeMainSection />
+      <CategorySection />
+      <HomeProductSection />
+      <InspirationSection />
+      <ShareSection />
+    </>
   );
 }
